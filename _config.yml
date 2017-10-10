@@ -13,6 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+gfm_quirks: paragraph_end
 title: "F1NYA"
 email: ufolkin1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
