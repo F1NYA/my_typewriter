@@ -1,0 +1,136 @@
+---
+  #sfkwfjkesfj
+---
+
+
+
+
+@keyframes color_change
+  0%
+    color: black
+  50%
+    color: rgb(0,0,0)
+  51%
+    color: rgba(0,0,0,0)
+  100%
+    color: rgba(0,0,0,0)
+
+
+div
+  display: block
+
+body
+  width: 100%
+  max-width: 720px
+  margin: 0 auto
+  display: block
+
+header
+  height: 60px
+  margin: 0 32px
+  cursor: default
+  justify-content: space-between
+  .wrapper
+    position: relative
+    top: 50%
+    transform: translate(0%, -50%)
+    display: flex
+    font-size: x-large
+    padding-top: 0.2em
+    .site-title
+      background-color: black
+      color: white
+      padding-left: 1%
+      text-decoration: none
+      &:hover
+        background-color: white
+        color: black
+        span
+          color: white
+          animation-delay: 5s
+          animation: 1.5s linear 0.5s infinite color_change
+    .site-nav
+      padding-left: 1%
+      .page-link
+        color: black
+        text-decoration: none
+
+.content
+  font-size: 16px
+  line-height: 1.5
+  width: 100%
+  max-width: 720px
+  margin-bottom: 60px
+
+body
+  font-family: "Roboto", sans-serif
+
+
+.post-block
+  display: flex
+  color: #555
+  .post-link:hover
+    color: black
+    .post-body
+      color: black
+  .post-body
+    display: block
+    text-shadow: none
+    text-decoration: none
+    border-bottom: dashed 2px black
+
+a.post-link
+  color: inherit
+  display: block
+  text-decoration: none
+  padding-top: 1em
+  &:hover
+    h3
+      background-color: black
+      color: white
+    info
+      background-color: black
+      color: white
+    p
+      background-color: black
+      color: white
+
+
+
+
+
+
+footer
+  border-top: 4px solid #eee
+  background-color: black
+  a
+    background-color: white
+    color: black
+    text-decoration: none
+
+  color: black
+
+
+h3.post-title
+  font-size: 18px
+
+h3
+  display: inline-block
+  margin: 0
+
+h3
+  font-size: 22px
+  letter-spacing: -0.2px
+
+h1, h2, h3, h4, h5, h6
+  color: #222
+  font-weight: 500
+  margin: 1.618em 0 0.7em
+
+*
+  margin: 0
+  padding: 0
+
+footer
+  display: block
+  padding: 0 0 1em 0
