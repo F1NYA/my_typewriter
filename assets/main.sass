@@ -22,6 +22,7 @@ div
 body
   width: 100%
   max-width: 720px
+  height: 100%
   margin: 0 auto
   display: block
 
@@ -110,10 +111,8 @@ footer
   border-top: 4px solid #eee
   background-color: black
   a
-    background-color: white
-    color: black
+    color: white
     text-decoration: none
-
   color: black
 
 
@@ -139,4 +138,19 @@ h1, h2, h3, h4, h5, h6
 
 footer
   display: block
-  padding: 0 0 1em 0
+  padding: 0 0 0.5em 0
+  
+.footer-col-wrapper
+  display: flex
+  justify-content: space-between
+
+.footer-col-wrapper div
+  margin: 5px
+  a
+    display: block
+    background-color: white
+    color: black
+    padding: 0.1em
+    &:hover
+      background-color: black
+      color: white
