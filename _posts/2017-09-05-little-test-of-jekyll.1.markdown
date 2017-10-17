@@ -5,7 +5,7 @@ date:   2017-09-05 21:27:06 +0300
 categories: mozilla foundation
 author: mozilla foundation
 ---
-[![Linux Build Status](https://img.shields.io/travis/servo/servo/master.svg?label=Linux%20build)](https://travis-ci.org/servo/servo)  [![Windows Build Status](https://img.shields.io/appveyor/ci/servo/servo/master.svg?label=Windows%20build)](https://ci.appveyor.com/project/servo/servo/branch/master)  [![Changelog #228](https://img.shields.io/badge/changelog-%23228-9E978E.svg)](https://changelog.com/podcast/228)
+![main image]({{ "/assets/screenshot.png" | absolute_url}})
 
 Servo is a prototype web browser engine written in the
 [Rust](https://github.com/rust-lang/rust) language. It is currently developed on
@@ -17,9 +17,10 @@ for help getting started.
 
 Visit the [Servo Project page](https://servo.org/) for news and guides.
 
-## Setting up your environment
+# Setting up your environment
 
 Please select your operating system:
+
 * [OS X](#os-x)
 * [Debian-based Linuxes](#on-debian-based-linuxes)
 * [Fedora](#on-fedora)
@@ -29,21 +30,22 @@ Please select your operating system:
 * [Microsoft Windows](#on-windows-msvc)
 * [Android](#cross-compilation-for-android)
 
-#### OS X
-#### On OS X (homebrew)
+## OS X
+
+### On OS X (homebrew)
 
 ``` sh
 brew install automake pkg-config python cmake yasm
 pip install virtualenv
 ```
 
-#### On OS X (MacPorts)
+### On OS X (MacPorts)
 
 ``` sh
 sudo port install python27 py27-virtualenv cmake yasm
 ```
 
-#### On OS X >= 10.11 (El Capitan), you also have to install OpenSSL
+### On OS X >= 10.11 (El Capitan), you also have to install OpenSSL
 
 ``` sh
 brew install openssl
@@ -56,7 +58,7 @@ export OPENSSL_LIB_DIR="$(brew --prefix openssl)/lib"
 
 If you've already partially compiled servo but forgot to do this step, run `./mach clean`, set the shell variables, and recompile.
 
-#### On Debian-based Linuxes
+## On Debian-based Linuxes
 
 ``` sh
 sudo apt install git curl freeglut3-dev autoconf libx11-dev \
@@ -72,7 +74,7 @@ If you are on **Ubuntu 14.04** and encountered errors on installing these depend
 
 If `virtualenv` does not exist, try `python-virtualenv`.
 
-#### On Fedora
+## On Fedora
 
 ``` sh
 sudo dnf install curl freeglut-devel libtool gcc-c++ libXi-devel \
@@ -82,7 +84,7 @@ rpm-build openssl-devel cmake bzip2-devel libXcursor-devel libXmu-devel mesa-lib
 dbus-devel ncurses-devel
 ```
 
-#### On openSUSE Linux
+## On openSUSE Linux
 
 ``` sh
 sudo zypper install libX11-devel libexpat-devel libbz2-devel Mesa-libEGL-devel Mesa-libGL-devel cabextract cmake \
@@ -91,13 +93,13 @@ harfbuzz-devel libOSMesa-devel libXcursor-devel libXi-devel libXmu-devel libXran
 python-pip python-virtualenv rpm-build glu-devel
 ```
 
-#### On Arch Linux
+## On Arch Linux
 
 ```sh
 sudo pacman -S --needed base-devel git python2 python2-virtualenv python2-pip mesa cmake bzip2 libxmu glu pkg-config
 ```
 
-#### On Gentoo Linux
+## On Gentoo Linux
 
 ```sh
 sudo emerge net-misc/curl media-libs/freeglut \
@@ -106,7 +108,7 @@ dev-python/virtualenv dev-python/pip dev-libs/openssl \
 x11-libs/libXmu media-libs/glu x11-base/xorg-server
 ```
 
-#### On Windows (MSVC)
+## On Windows (MSVC)
 
 1. Install Python for Windows (https://www.python.org/downloads/release/python-2711/). The Windows x86-64 MSI installer is fine. You should change the installation to install the "Add python.exe to Path" feature.
 2. Install virtualenv. In a normal Windows Shell (cmd.exe or "Command Prompt" from the start menu), do:
@@ -117,9 +119,7 @@ pip install virtualenv
 
  If this does not work, you may need to reboot for the changed PATH settings (by the python installer) to take effect.
 
-3. Install Git for Windows (https://git-scm.com/download/win). DO allow it to add git.exe to the PATH (default
-settings for the installer are fine).
-
+3. Install Git for Windows (https://git-scm.com/download/win). DO allow it to add git.exe to the PATH (default settings for the installer are fine).
 4. Install Visual Studio Community 2017 (https://www.visualstudio.com/). You MUST add "Visual C++" to the
 list of installed components. It is not on by default.
 > If you encountered errors with the environment above, do the following for a workaround:
